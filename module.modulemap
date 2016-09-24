@@ -1,5 +1,11 @@
-module Clibtls [system] {
+module ClibtlsMac [system] {
     header "/usr/local/opt/libressl/include/tls.h"
+    link "tls"
+    export *
+}
+
+module ClibtlsLinux [system] {
+    header "/usr/local/include/tls.h"
     link "tls"
     export *
 }
