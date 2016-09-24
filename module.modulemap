@@ -1,0 +1,5 @@
+module Clibtls [system] {
+    header "/usr/local/opt/libressl/include/tls.h"
+    link "tls"
+    export *
+}
